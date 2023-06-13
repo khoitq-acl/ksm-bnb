@@ -1,0 +1,163 @@
+html {
+  font-size: 8px;
+}
+
+main {
+  background: whitesmoke;
+  height: 1000px;
+}
+
+.header-wrapper {
+  width: 100%;
+  position: fixed;
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 
+grid container
+
+
+  grid-column
+  grid-row
+  grid-areas
+  grid-template
+
+  
+grid items
+
+   */
+header {
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 20px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 16px;
+}
+
+.search {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 999999px;
+  height: 20px;
+  align-items: center;
+  overflow: hidden;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search button {
+  font-size: 8px;
+  padding: 0 8px 0 8px;
+  border: none;
+  background-color: white;
+  white-space: nowrap;
+  height: 12px;
+  display: inline-block;
+}
+
+.search button.search__location-button,
+.search button.search__week-button {
+  border-right: 1px solid #ddd;
+}
+
+.search button.search__add-customer-button {
+  color: #989595;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.add-customer-button__text {
+  margin-right: 4px;
+  display: block;
+  font-weight: 200;
+}
+
+.add-customer-button__icon {
+  background-color: #ff395c;
+  border-radius: 100%;
+  color: white;
+  height: 12px;
+  width: 12px;
+  display: block;
+  position: relative;
+}
+
+.add-customer-button__icon svg {
+  font-size: 6px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.head__right-actions-container {
+  display: flex;
+  align-items: center;
+}
+
+.header__rent {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.multilanguage-button {
+  border: none;
+  background: white;
+  margin-left: 4px;
+  margin-right: 4px;
+  position: relative;
+}
+
+.multilanguage-button svg {
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-actions {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 9999999px;
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.user-actions__menu-icon {
+  position: relative;
+  width: 8px;
+  height: 16px;
+}
+
+.user-actions__menu-icon svg {
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-actions__user-icon {
+  position: relative;
+  width: 8px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.user-actions__user-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #756e6e;
+}
