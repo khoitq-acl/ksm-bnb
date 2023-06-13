@@ -63,6 +63,29 @@ header {
 .search button.search__week-button {
   border-right: 1px solid #ddd;
 }
+/* mobile  0 < x < 672px */
+@media only screen and (max-width: 672px) {
+  main {
+    background-color: green;
+  }
+
+  .search button.search__location-button,
+  .search button.search__week-button {
+    border-right: 10px solid #ddd;
+  }
+}
+
+/* tablet  673px < x < 1024px */
+@media only screen and (min-width: 673px) and (max-width: 1024px) {
+  main {
+    background-color: red;
+  }
+
+  .search button.search__location-button,
+  .search button.search__week-button {
+    border-right: 100px solid #ddd;
+  }
+}
 
 .search button.search__add-customer-button {
   color: #989595;
